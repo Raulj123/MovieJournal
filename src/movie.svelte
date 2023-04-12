@@ -26,20 +26,41 @@
     }
 </script>
 
-<input 
-placeholder="Move Title" 
-type='text'
-value={title}
-on:keyup={updateMoveTitle}     
-/>
+<div class="main">
+    <input 
+    placeholder="Move Title" 
+    type='text'
+    value={title}
+    on:keyup={updateMoveTitle}     
+    />
+    
+    
+    <select value={rating} on:change={onRatingSelect}>
+        <option value={1}>1</option>
+        <option value={2}>2</option>
+        <option value={3}>3</option>
+        <option value={4}>4</option>
+        <option value={5}>5</option>
+    </select>
+    <button disabled={!title} on:click={SubmitMovie}>Submit</button>
+
+</div>
 
 
-<select value={rating} on:change={onRatingSelect}>
-    <option value={1}>1</option>
-    <option value={2}>2</option>
-    <option value={3}>3</option>
-    <option value={4}>4</option>
-    <option value={5}>5</option>
-</select>
 
-<button disabled={!title} on:click={SubmitMovie}>Submit</button>
+<style>
+.main{
+    width: 100%;
+    display:flex;
+
+}
+.main input{
+    flex:1;
+}
+.main select{
+    width: 75%;
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+</style>

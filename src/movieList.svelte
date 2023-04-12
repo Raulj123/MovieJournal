@@ -12,3 +12,11 @@
 
 
 {/each}
+
+<style>
+    div{
+        text-align: left;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+    }
+</style>
