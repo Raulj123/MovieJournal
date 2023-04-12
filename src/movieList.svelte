@@ -15,6 +15,9 @@
 {/each}
 
 <style>
+    h3{
+        color: #ff3e00;
+    }
     div{
         overflow-y: auto;
         text-align: left;

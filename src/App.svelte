@@ -29,25 +29,26 @@
 	};
 </script>
 
-<main>
+<main style="background-color:#f5f5dc;">
 	<div class="main">
 		<h1>Movie Journal</h1>
 		<Search on:clearSearch={clearSearch} on:search ={e =>search(e.detail.searchTerm)}/>
 		<MovieInput on:submitMovie={event => submitMovie(event.detail.movie)}/>
 		<MovieList movies={movies}/>
 	</div>
+	<footer >Made with &#10084 by Raul </footer>
 </main>
 
 <style>
 	.main{
-		background-color: white;
+		background-color: #f5f5dc;
 		width: 500px;
 		max-width: 100%;
 		padding:1em;
 		margin: auto;
 		text-align: center;
 	}
-
+	
 	h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
