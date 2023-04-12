@@ -4,6 +4,7 @@
     let title = '';
     let rating = 1;
     let description ='';
+
     const updateMoveTitle = (e) => {       //accept the event from on:keyup
         title = e.target.value;       //retrieve the current value of an input field with the id or name of "title" when an input change event is triggered
     }
@@ -41,7 +42,6 @@
     on:keyup={updateMoveTitle}     
     />
     
-    
     <select value={rating} on:change={onRatingSelect}>
         <option value={1}>1</option>
         <option value={2}>2</option>
@@ -49,12 +49,14 @@
         <option value={4}>4</option>
         <option value={5}>5</option>
     </select>
+   
     <input
     placeholder="Description"
     value={description}
     on:keyup={updateDescription}
     />
-    <button style="  margin-left: 10px;" disabled={!title} on:click={SubmitMovie}>Submit</button>
+
+    <button style="margin-left: 10px;" disabled={!title} on:click={SubmitMovie}>Submit</button>
   
 </div>
 
@@ -71,7 +73,7 @@
     margin-left: 10px;
 }
 .main select{
-    width: 75px;
+    width: 100px;
     margin-left: 10px;
    margin-right: 10px;
 }

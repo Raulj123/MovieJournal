@@ -36,7 +36,8 @@
 		<MovieInput on:submitMovie={event => submitMovie(event.detail.movie)}/>
 		<MovieList movies={movies}/>
 	</div>
-	<footer >Made with &#10084 by Raul </footer>
+	<footer >Made with 💖 by Raul </footer>
+   
 </main>
 
 <style>
