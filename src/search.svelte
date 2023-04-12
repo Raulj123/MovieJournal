@@ -30,5 +30,6 @@ on:keyup={search}
     input{
         width:100%;
         margin-bottom: 10px;
+        height:30px;
     }
 </style>

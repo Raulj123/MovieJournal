@@ -8,6 +8,7 @@
     <div>
         <h3>{movie.title}</h3>
         <p>Rating: {movie.rating}</p>
+       <p>Description: {movie.description}</p>
     </div>
 
 
