@@ -64,18 +64,19 @@
 .main{
     width: 100%;
     display:flex;
-    
+    height:30px;
 }
 .main input{
     flex:1;
-    padding:5px;
     margin-left: 10px;
 }
 .main select{
-    width: 75%;
+    width: 75px;
     margin-left: 10px;
-    padding:10px;
-    
+   margin-right: 10px;
+}
+.main button{
+    width: 75px;
 }
 
 </style>

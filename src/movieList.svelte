@@ -16,6 +16,7 @@
 
 <style>
     div{
+        overflow-y: auto;
         text-align: left;
         padding-bottom: 10px;
         border-bottom: 1px solid black;
