@@ -2,6 +2,7 @@
 	import MovieInput from './movie.svelte';
 	import MovieList from './movieList.svelte';
 	import Search from './search.svelte'
+	
 	let movies = localStorage.getItem('movies') ?
 	JSON.parse(localStorage.getItem('movies')) :
 	[];
